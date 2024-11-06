@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: "Sofia", sans-serif;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.nav {
+    backdrop-filter: blur(10px);
+
+}
