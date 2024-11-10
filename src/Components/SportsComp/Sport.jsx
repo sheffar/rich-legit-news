@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
-import image from "../../assets/pad.jpeg"
 import { useEffect, useState } from "react"
 import Spinner from "../Spinner"
+import { FaArrowRightLong } from "react-icons/fa6"
 export const Sport = () => {
     const [apiData, setApiData] = useState([])
     const [loading, setLoading] = useState(true)
@@ -32,6 +32,21 @@ export const Sport = () => {
             setLoading(false)
         }
     }
+    const links = [
+        {
+            name: "Business",
+            to: '/business'
+        }
+        ,
+        {
+            name: "Sport",
+            to: '/sport'
+        },
+        {
+            name: "Technology",
+            to: '/technology'
+        }
+    ]
 
 
     useEffect(() => {
@@ -63,6 +78,13 @@ export const Sport = () => {
             }
 
 
+            <div className="w-full  bg-black p-1">
+                <div className="flex flex-col  w-full justify-between gap-2 md:gap-4 px-4 md:px-16">
+                    {links.map((el, index) => (
+                        <Link key={index} to={el.to} className="text-black px-3 bg-white  group  flex items-center justify-between  text-[15px] font-semibold  py-2 md:py-4 w-full border">{el.name} <FaArrowRightLong className="group-hover:translate-x-1 duration-300 " /> </Link>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }

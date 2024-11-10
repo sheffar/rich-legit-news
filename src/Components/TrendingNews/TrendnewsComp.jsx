@@ -31,7 +31,7 @@ export const TrendnewsComp = () => {
 
     useEffect(() => {
         call()
-    }, [])
+    }, [])  
     const links = [
         {
             name: "Business",
@@ -45,15 +45,12 @@ export const TrendnewsComp = () => {
         {
             name: "Technology",
             to: '/technology'
-        },
-        {
-            name: "cars",
-            to: ''
         }
     ]
     return (
         <div className="w-full  md:px-14">
-
+          
+      
             <div className="grid md:grid-cols-[1.5fr_1.5fr_1fr] my-10   gap-2 ">
                 {/* first grid here */}
 

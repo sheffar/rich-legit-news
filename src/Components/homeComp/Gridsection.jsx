@@ -34,7 +34,9 @@ export const Gridsection = () => {
     }, [])
     return (
         <div>
+
             <div className="grid sm:grid-cols-2 md:grid-cols-3 px-4 md:px-20 gap-5 bg-black py-20 text-white">
+
                 {apiData.slice(0, 9).map((el, i) => (
                     <div key={i} className="shadow shadow-white group cursor-pointer rounded-md">
                         <div className="w-full h-[200px] bg-red border-[3px]   border-blue-200 rounded-lg">
