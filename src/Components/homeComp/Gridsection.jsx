@@ -1,5 +1,6 @@
-import {  useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
+
 export const Gridsection = () => {
     const [apiData, setApiData] = useState([])
 
@@ -34,6 +35,8 @@ export const Gridsection = () => {
     }, [])
     return (
         <div>
+
+
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 px-4 md:px-20 gap-5 bg-black py-20 text-white">
 

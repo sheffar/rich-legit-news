@@ -1,6 +1,8 @@
 import { Link, useLocation, useNavigate } from "react-router-dom"
 import { FaArrowRightLong } from "react-icons/fa6"
 import { useEffect, useState } from "react"
+import { Ads } from "../Ads.jsx"
+
 export const TrendnewsComp = () => {
     const [apiData, setApiData] = useState([])
     const navigate = useNavigate()
@@ -31,7 +33,7 @@ export const TrendnewsComp = () => {
 
     useEffect(() => {
         call()
-    }, [])  
+    }, [])
     const links = [
         {
             name: "Business",
@@ -50,7 +52,9 @@ export const TrendnewsComp = () => {
     return (
         <div className="w-full  md:px-14">
           
-      
+            <Ads />
+            <div id="banner"></div>
+
             <div className="grid md:grid-cols-[1.5fr_1.5fr_1fr] my-10   gap-2 ">
                 {/* first grid here */}
 
@@ -98,5 +102,6 @@ export const TrendnewsComp = () => {
                 </div>
             </div>
         </div>
+
     )
 }

@@ -40,6 +40,7 @@ export const Catgory = () => {
     return (
 
         <div className="" >
+            
             {loading ? <Spinner loading={loading} /> : (
                 <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr_1fr] gap-3 w-full my-16 md:px-10">
                     {/* First Bot  */}

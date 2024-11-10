@@ -1,8 +1,8 @@
 import { FaArrowRightLong, FaFacebook, FaLinkedin, FaWhatsapp, FaX, FaYoutube } from "react-icons/fa6"
-import image from "../../assets/mac book.jpeg"
-import pad from "../../assets/pad.jpeg"
+
 import { Link, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { Ads } from "../Ads.jsx"
 export const Featured = () => {
     const [apiData, setApiData] = useState([])
     const navigate = useNavigate()
@@ -59,7 +59,7 @@ export const Featured = () => {
 
     return (
         <div className="bg-gray-300/30  py-5 ">
-
+        
             <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1.5fr_1fr] gap-4 px-2 md:px-10 my-10">
                 {/* The first section*/}
                 {apiData?.slice(7, 8).map((item, index) => (
@@ -104,6 +104,8 @@ export const Featured = () => {
                 </div>
 
             </div>
+
+            
         </div>
     )
 }
