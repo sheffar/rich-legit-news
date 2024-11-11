@@ -55,6 +55,8 @@ export const TrendnewsComp = () => {
             <Ads />
             <div id="banner"></div>
 
+            
+
             <div className="grid md:grid-cols-[1.5fr_1.5fr_1fr] my-10   gap-2 ">
                 {/* first grid here */}
 
