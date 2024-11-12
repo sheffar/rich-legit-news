@@ -55,8 +55,8 @@ export const Sport = () => {
     }, [])
     return (
         <div className=" bg-black">
-             <Ads />
-             <div id="banner"></div>
+             {/* <Ads />
+             <div id="banner"></div> */}
 
             <p className="text-white w-full  flex items-center gap-5 px-4 md:px-10 py-2 text-[17px] font-semibold">Sport  <hr className="w-full h-[2px] bg-red-500 border-red-500" />  </p>
             {loading ? <Spinner loading={loading} /> :
