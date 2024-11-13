@@ -9,6 +9,7 @@ import { Sports } from './pages/Sports.jsx'
 import { BusinessPage } from './pages/BusinessPage.jsx'
 import { Nav } from './Components/Nav.jsx'
 import { Display } from './Components/Display.jsx'
+import { Ads } from './Components/Ads.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,6 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Nav />
+      {/* <Ads />
+      <div id="banner"></div>  */}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/technology' element={<Teachnology />} />
