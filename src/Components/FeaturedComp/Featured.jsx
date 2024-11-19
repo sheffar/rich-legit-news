@@ -85,7 +85,7 @@ export const Featured = () => {
                             <img src={item.img_url} alt="Img" onClick={() => Displanews(item.id)} className="object-cover   w-full max-h-[150px] " />
 
                             <div className="text-black bg-gray-400/50 rounded-xl p-2 gap-3 flex flex-col md:absolute md:top-1/2 md:left-0 w-full ">
-                                <p className="p-1 px-4 bg-yellow-400 w-fit rounded-md text-[12px] font-semibold">Business</p>
+                                <p className="p-1 px-4 bg-yellow-400 w-fit rounded-md text-[12px] font-semibold">News</p>
                                 <p className="text-[16px] font-semibold">{item.title}</p>
                             </div>
 

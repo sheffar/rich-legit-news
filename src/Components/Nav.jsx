@@ -25,8 +25,8 @@ export const Nav = () => {
 
                 <div className={` ${openMenu ? "block" : 'hidden md:flex'} bg-white   shadow-md shadow-black md:shadow-none  z-10 py-4 md:py-2  flex flex-col md:flex-row gap-8 absolute md:static top-16 w-full md:w-fit   right-0  md:gap-16 items-center justify-center`}>
 
-                    <Link to={"/business"} className="flex items-center font-semibold text-sm gap-1 hover:scale-105 duration-300 mx-auto w-fit"> Business  </Link>
-                    <Link to={"/technology"} className="flex items-center gap-1 font-semibold text-sm hover:scale-105 duration-300 mx-auto w-fit"> Technology </Link>
+                    <Link to={"/news"} className="flex items-center font-semibold text-sm gap-1 hover:scale-105 duration-300 mx-auto w-fit"> News  </Link>
+                    <Link to={"/war"} className="flex items-center gap-1 font-semibold text-sm hover:scale-105 duration-300 mx-auto w-fit"> War </Link>
                     <Link to={"/sport"} className="flex items-center gap-1 hover:scale-105  font-semibold text-sm duration-300 mx-auto w-fit"> Sport  </Link>
                 </div>
                 <div className="flex z-10 md:z-0 md:hidden hover:text-orange-500 duration-300 " onClick={() => toggleMenu()}>

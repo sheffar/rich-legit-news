@@ -15,10 +15,9 @@ export const Footer = () => {
                     <div className="flex flex-col gap-4">
                         <p className="text-[20px] font-semibold">Links </p>
                         <div className="flex flex-col gap-3 ">
-                            <Link>Business</Link>
+                            <Link>News</Link>
                             <Link>Sport</Link>
-                            <Link>Technology</Link>
-                            <Link>Cars</Link>
+                            <Link>War</Link>
                         </div>
 
                     </div>

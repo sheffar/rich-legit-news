@@ -36,8 +36,8 @@ export const TrendnewsComp = () => {
     }, [])
     const links = [
         {
-            name: "Business",
-            to: '/business'
+            name: "News",
+            to: '/news'
         }
         ,
         {
@@ -45,8 +45,8 @@ export const TrendnewsComp = () => {
             to: '/sport'
         },
         {
-            name: "Technology",
-            to: '/technology'
+            name: "War",
+            to: '/war'
         }
     ]
     return (
